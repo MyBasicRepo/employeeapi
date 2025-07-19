@@ -4,7 +4,7 @@
 
 	<groupId>610d7bb0-7460-4907-843e-6bc9c8473b0e</groupId>
 	<artifactId>employeeapi</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<packaging>mule-application</packaging>
 
 	<name>employeeapi</name>
@@ -13,7 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.9.0</app.runtime>
+		<app.runtime>4.9-java17</app.runtime>
 		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
 	</properties>
 	<build>
@@ -34,7 +34,7 @@
 		<provider>MC</provider>
 		<environment>Sandbox</environment>
 		<target>Cloudhub-US-East-2</target>
-		<muleVersion>4.9.0</muleVersion>
+		<muleVersion>4.9-java17</muleVersion>
 		<server>ca.anypoint.credentials</server>
 		<properties>
 		<anypoint.platform.client_id>c57b4429deea49b391a2761ea0663b62</anypoint.platform.client_id>
