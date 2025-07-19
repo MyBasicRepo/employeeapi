@@ -35,6 +35,7 @@
 		<environment>Sandbox</environment>
 		<target>Cloudhub-US-East-2</target>
 		<muleVersion>4.6-java17</muleVersion>
+		<javaVersion>17</javaVersion>
 		<server>ca.anypoint.credentials</server>
 		<properties>
 		<anypoint.platform.client_id>c57b4429deea49b391a2761ea0663b62</anypoint.platform.client_id>
