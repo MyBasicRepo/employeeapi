@@ -13,8 +13,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.6-java17</app.runtime>
-		<mule.maven.plugin.version>4.1.1</mule.maven.plugin.version>
+		<app.runtime>4.9.6</app.runtime>
+		<mule.maven.plugin.version>4.1.2</mule.maven.plugin.version>
 	</properties>
 	<build>
 		<plugins>
@@ -34,9 +34,9 @@
 						<provider>MC</provider>
 						<environment>Sandbox</environment>
 						<target>Cloudhub-US-East-2</target>
-						<muleVersion>4.6-java17</muleVersion>
+						<muleVersion>4.9.6</muleVersion>
 						<javaVersion>17</javaVersion>
-						<releaseChannel>LTS</releaseChannel>
+						<releaseChannel>EDGE</releaseChannel>
 						<server>ca.anypoint.credentials</server>
 						<properties>
 							<anypoint.platform.client_id>c57b4429deea49b391a2761ea0663b62</anypoint.platform.client_id>
@@ -54,7 +54,7 @@
 							</services>
 						</integrations>
 					</cloudhub2Deployment>
-					<classifier>---- select project type ----</classifier>
+					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
 		</plugins>
