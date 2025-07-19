@@ -4,7 +4,7 @@
 
 	<groupId>610d7bb0-7460-4907-843e-6bc9c8473b0e</groupId>
 	<artifactId>employeeapi</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>employeeapi</name>
