@@ -36,6 +36,10 @@
 		<target>Cloudhub-US-East-2</target>
 		<muleVersion>4.9.0</muleVersion>
 		<server>ca.anypoint.credentials</server>
+		<properties>
+		<anypoint.platform.client_id>c57b4429deea49b391a2761ea0663b62</anypoint.platform.client_id>
+		<anypoint.platform.client_secret>4aE1627Bd0744bD0AAB240c69c37a568</anypoint.platform.client_secret>
+		</properties>
 		<applicationName>employeeapi</applicationName>
 		<replicas>1</replicas>
 		<vCores>0.1</vCores>
