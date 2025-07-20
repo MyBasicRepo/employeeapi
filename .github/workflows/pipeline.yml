@@ -22,10 +22,13 @@ jobs:
           distribution: zulu
           java-version: 17
       - name: Publish to Exchange
+        env:
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}      
         run: |
           mvn deploy --settings .maven/settings.xml -DskipMunitTests \
-          -Dusername= "${{ secrets.USERNAME }}" \
-          -Dpassword= "${{ secrets.PASSWORD }}"
+          -Dusername= "$USERNAME" \
+          -Dpassword= "$PASSWORD"
   deploy:
     runs-on: ubuntu-latest
     needs: build_publish
