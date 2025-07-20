@@ -23,7 +23,7 @@ jobs:
           java-version: 17
       - name: Publish to Exchange
         run: |
-          mvn deploy --settings .maven/settings.xml -DskipMunitTests -DUSERNAME= ${{secrets.USERNAME}} -DPASSWORD= ${{ secrets.PASSWORD }}
+          mvn deploy --settings .maven/settings.xml -DskipMunitTests -Dusername= ${{secrets.USERNAME}} -Dpassword= ${{ secrets.PASSWORD }}
   deploy:
     runs-on: ubuntu-latest
     needs: build_publish
@@ -43,4 +43,4 @@ jobs:
           java-version: 17    
       - name: Deploy to CloudHub 2.0
         run: >
-          mvn deploy --settings .maven/settings.xml -DskipMunitTests -DmuleDeploy -DUSERNAME= ${{secrets.USERNAME}} -DPASSWORD= ${{ secrets.PASSWORD }}
+          mvn deploy --settings .maven/settings.xml -DskipMunitTests -DmuleDeploy -Dusername= ${{secrets.USERNAME}} -Dpassword= ${{ secrets.PASSWORD }}
