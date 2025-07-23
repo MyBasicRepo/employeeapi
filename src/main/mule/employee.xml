@@ -141,6 +141,7 @@ output application/json
 } as Object {encoding: "UTF-8", mediaType: "application/json"}]]></ee:set-payload>
             </ee:message>
         </ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="7bd28798-efff-4055-8872-bc695479ac33" message='"Hello"'/>
     </flow>
     <flow name="delete:\employees\(id):employee-config">
         <ee:transform doc:name="Transform Message">
